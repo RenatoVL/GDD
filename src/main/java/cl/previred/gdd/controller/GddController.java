@@ -12,7 +12,7 @@ import cl.previred.gdd.service.GddService;
 
 
 @RestController
-public class GddController {
+public class GddController { 
 	private static final Logger LOG = LoggerFactory.getLogger(GddController.class);
 	
 	@Autowired
