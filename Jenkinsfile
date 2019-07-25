@@ -22,6 +22,15 @@ node {
    echo 'Compilando aplicación'
    sh 'mvn clean compile'
    
+      // ------------------------------------
+   // -- ETAPA: SONAR
+   // ------------------------------------
+   mvn sonar:sonar \
+  -Dsonar.projectKey=Ejemplo1 \
+  -Dsonar.host.url=http://localhost:9000 \
+  -Dsonar.login=0f058438617e4a69f7f1b0fe0bb479521ffdc49c
+   
+   
    // ------------------------------------
    // -- ETAPA: Test
    // ------------------------------------
